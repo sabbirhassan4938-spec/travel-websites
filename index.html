@@ -1,38 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Agency Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <div class="header">
-        <h1>Explore The World With Us</h1>
-        <p>Best Travel Packages | Easy Booking | Trusted Service</p>
-        <a href="#packages" class="btn">View Packages</a>
-    </div>
-
-    <!-- Packages -->
-    <section class="packages" id="packages">
-        <h2>Our Travel Packages</h2>
-
-        <div class="package-box">
-            <h3>Dhaka → Cox's Bazar</h3>
-            <p>3 Days / 2 Nights</p>
-            <p class="price">৳12,000</p>
-            <a href="#contact" class="btn">Book Now</a>
-        </div>
-
-        <div class="package-box">
-            <h3>Maldives Tour</h3>
-            <p>5 Days / 4 Nights</p>
-            <p class="price">৳85,000</p>
-            <a href="#contact" class="btn">Book Now</a>
-        </div>
-
-        <div class="package-box">
-            <h3>Dubai Holiday</h3>
-            <
+    <header>
+        <h1>Explore Travel Agency</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Book unforgettable trips worldwide.</p>
+        </section>
+        <section id="packages">
+            <h2>Featured Packages</h2>
+            <div class="package">
+                <img src="paris.jpg" alt="Paris Trip">
+                <h3>Paris Getaway</h3>
+                <p>Romantic city tour, 5 days, $1,200</p>
+                <button onclick="bookPackage('Paris Getaway')">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="bali.jpg" alt="Bali Trip">
+                <h3>Bali Beach Escape</h3>
+                <p>Tropical paradise, 7 days, $1,500</p>
+                <button onclick="bookPackage('Bali Beach Escape')">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="tokyo.jpg" alt="Tokyo Trip">
+                <h3>Tokyo Adventure</h3>
+                <p>Urban exploration, 6 days, $1,800</p>
+                <button onclick="bookPackage('Tokyo Adventure')">Book Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Explore Travel Agency. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
