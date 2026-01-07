@@ -1,100 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #007bff;
+/* Header */
+.header {
+    height: 100vh;
+    background: linear-gradient(to right, #1d976c, #93f9b9);
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding-top: 150px;
 }
 
-nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
+.header h1 {
+    font-size: 50px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.header p {
+    font-size: 20px;
 }
 
-#hero {
-    background-image: url('hero-bg.jpg'); /* Add a background image */
-    background-size: cover;
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#packages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.package {
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
     background: white;
-    border: 1px solid #ddd;
-    margin: 1rem;
-    padding: 1rem;
+    color: #1d976c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Packages */
+.packages {
+    padding: 50px;
     text-align: center;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.package img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.package-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
-button {
-    background-color: #007bff;
+.package-box .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d976c;
+}
+
+/* Contact */
+.contact {
+    background: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.contact form button {
+    padding: 12px 30px;
+    background: #1d976c;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin-top: 1rem;
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#about, #contact {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 1rem;
-}
-
-input, textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #007bff;
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
     color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
 }
