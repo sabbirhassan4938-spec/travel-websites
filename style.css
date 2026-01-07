@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header */
 .header {
     height: 100vh;
     background: linear-gradient(to right, #1d976c, #93f9b9);
@@ -28,6 +29,34 @@ body {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+}
+
+/* Contact Form */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.contact form button {
+    padding: 12px 30px;
+    background: #1d976c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
